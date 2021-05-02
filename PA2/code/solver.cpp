@@ -26,6 +26,7 @@ int Solver::getAns(BaseCache* cache, int addresses, int lines) {
 		}
 	}
 	
+	cache->accessu();
 	// search among all addresses that are in the cache line_num
 	// use the line number 32 as the step size to clear all the addresses i.
 	// only when u == i can it hit and be cleared successfully, thus successfuly attacking the unknown address
